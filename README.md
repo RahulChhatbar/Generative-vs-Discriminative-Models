@@ -23,14 +23,14 @@ C:\CourseWork\GenerativeArtificialIntelligence\Assignments\Assignment 2
 ├── requirements.txt  # List of dependencies for the project
 └── src  # Source code and Jupyter notebooks
     ├── mnist_analysis.ipynb  # MNIST dataset analysis with Naive Bayes and Logistic Regression
-    └── penguin_analysis.ipynb  # Penguin species classification analysis
+    └── penguin_analysis.ipynb  # Penguin species classification analysis```
 
 ## Requirements
 
 Before running the code, ensure you have the necessary dependencies installed. You can install them using:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ## How to Run the Code
 
