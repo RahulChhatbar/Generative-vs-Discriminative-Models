@@ -16,7 +16,6 @@ This project compares the performance of **Naive Bayes** (a Generative Model) an
 ## Directory Structure
 
 ```plaintext
-C:\CourseWork\GenerativeArtificialIntelligence\Assignments\Assignment 2
 │
 ├── 021---Assignment-2---Generativevs.-Discriminative-Models.pdf  # Assignment instructions and details.
 ├── README.md  # This file
