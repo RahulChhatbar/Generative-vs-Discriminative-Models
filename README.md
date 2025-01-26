@@ -57,32 +57,32 @@ pip install -r requirements.txt
 
 ### Accuracy Comparison
 
-- **Objective:** Compare the accuracy of Naive Bayes and Logistic Regression.
-- **Metrics:** Evaluate performance on both training and test datasets.
-- **Insight:** Determine which model better distinguishes between the two penguin species.
+- **Objective:** Compare how well Naive Bayes and Logistic Regression classify the two penguin species based on accuracy.
+- **Metrics:** We evaluate both models on the training and test datasets to understand how accurately they distinguish between the species.
+- **Insight:** Both models achieve perfect accuracy on this simple task, making them equally effective in classifying the penguin species in the given dataset.
 
 ### AUC Comparison
 
-- **Objective:** Compute the AUC (Area Under the ROC Curve) for both models.
-- **Metrics:** Assess the model’s ability to distinguish between the penguin species.
-- **Insight:** Interpret AUC scores to identify which model provides better discrimination.
+- **Objective:** Calculate and compare the AUC (Area Under the ROC Curve) for Naive Bayes and Logistic Regression.
+- **Metrics:** AUC scores assess each model’s ability to correctly distinguish between the two penguin species.
+- **Insight:** Both models achieve a perfect AUC of 1.0, indicating that they perfectly separate the classes, showing optimal performance for this dataset.
 
 ### Lift and Gain Charts
 
-- **Objective:** Visualize the effectiveness of both models using lift and gain charts.
-- **Metrics:** Generate Lift and Gain plots using deciles, comparing both models.
-- **Insight:** Evaluate how well each model ranks predicted probabilities.
+- **Objective:** Visualize model performance by generating lift and gain charts, helping to assess the effectiveness of ranking predicted probabilities.
+- **Metrics:** Lift and Gain charts are plotted using deciles to evaluate how well each model ranks positive instances.
+- **Insight:** Both models show similar performance in identifying positive instances, with strong results in the top deciles, though their effectiveness decreases as they consider lower-probability instances.
 
 ### Model Performance Comparison
 
-- **Objective:** Compare overall model performance based on the above metrics.
-- **Discussion:** Provide a summary of which model is better suited for the penguin species classification task and explain why.
+- **Objective:** Compare the overall performance of Naive Bayes and Logistic Regression using accuracy, AUC, and Lift/Gain charts.
+- **Discussion:** Both models achieve identical results in terms of accuracy and AUC, and their Lift and Gain charts show similar performance across deciles. Given the simplicity of the dataset, both models perform equally well, making them both suitable for the classification task.
 
 ### Performance on MNIST
 
-- **Objective:** Evaluate how Naive Bayes and Logistic Regression perform on the MNIST dataset (handwritten digit recognition).
-- **Discussion:** Compare the models' behavior when applied to image data and provide insights into the differences observed between the simpler penguin dataset and the complex MNIST dataset.
+- **Objective:** Evaluate how Naive Bayes and Logistic Regression handle the more complex MNIST dataset (handwritten digit recognition).
+- **Discussion:** While Logistic Regression outperforms Naive Bayes in accuracy on MNIST, both models struggle with the dataset’s complexity. Naive Bayes shows poor performance due to its assumption of feature independence, while Logistic Regression performs better but still doesn't achieve perfect accuracy, highlighting the need for more advanced models like Convolutional Neural Networks (CNNs) for such tasks.
 
 ## Conclusion
 
-This project demonstrates the application of both Generative and Discriminative models to real-world classification tasks, showcasing their respective strengths and weaknesses. The comparison provides insights into how each model type handles different data complexities.
+This project compares the performance of generative (Naive Bayes) and discriminative (Logistic Regression) models in real-world classification tasks. The analysis highlights their strengths in handling simpler datasets like the penguin dataset and the challenges they face when applied to more complex image data, such as the MNIST dataset. The findings suggest that while both models perform well for the penguin classification task, more sophisticated models would be necessary for more complex datasets like MNIST.
