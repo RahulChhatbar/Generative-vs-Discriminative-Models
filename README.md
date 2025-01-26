@@ -79,9 +79,13 @@ pip install -r requirements.txt
 - **Discussion:** Both models achieve identical results in terms of accuracy and AUC, and their Lift and Gain charts show similar performance across deciles. Given the simplicity of the dataset, both models perform equally well, making them both suitable for the classification task.
 
 ### Performance on MNIST
+**Objective**: Compare Naive Bayes and Logistic Regression on the MNIST dataset, focusing on digits 8 and 9.
 
-- **Objective:** Evaluate how Naive Bayes and Logistic Regression handle the more complex MNIST dataset (handwritten digit recognition).
-- **Discussion:** While Logistic Regression outperforms Naive Bayes in accuracy on MNIST, both models struggle with the dataset’s complexity. Naive Bayes shows poor performance due to its assumption of feature independence, while Logistic Regression performs better but still doesn't achieve perfect accuracy, highlighting the need for more advanced models like Convolutional Neural Networks (CNNs) for such tasks.
+**Discussion**: 
+Logistic Regression outperformed Naive Bayes with a higher accuracy of 0.97, compared to 0.87 for Naive Bayes. Logistic Regression also achieved a perfect AUC of 1.0, while Naive Bayes had an AUC of 0.89, indicating better discriminative power in this complex dataset. The confusion matrix and classification report further showed better performance by Logistic Regression with fewer misclassifications.
+
+**Conclusion**: 
+Logistic Regression was more effective on the MNIST dataset, highlighting its advantage in handling complex, high-dimensional data compared to Naive Bayes.
 
 ## Conclusion
 
